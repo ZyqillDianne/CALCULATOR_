@@ -1,0 +1,70 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: pink;
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center; 
+}
+
+.wrapper{
+    background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(200px);
+    border-radius: 16px;
+    box-shadow: 0 0 10px 5px rgb(216, 34, 134), 0 0 20px 7px rgb(16, 184, 206), 0 0 30px rgb(255, 0, 170);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    border: 3px solid rgba(228, 134, 139, 0.34);
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.screen{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(rgb(240, 168, 208), rgb(247, 181, 202), rgb(255, 198, 198), rgb(255, 235, 212));
+    border-radius: 20px;
+    color: #232323;
+    font-size: 35px;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 15px;
+    border: 1px solid rgba(252, 15, 145, 0.979);
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 0 1px 1px rgb(245, 10, 128), 0 0 20px 1px rgb(236, 45, 156), 0 0 50px -1px rgb(165, 3, 240);
+}
+
+.shrink-text {
+    font-size: 20px; 
+}
+
+.scrollable {
+    overflow-x: auto; 
+    text-overflow: ellipsis; 
+    
+}
+
+.calc-button-row{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
